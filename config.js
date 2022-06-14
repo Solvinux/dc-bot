@@ -1,12 +1,12 @@
 module.exports = {
-  OWNER_IDS: [], // Bot owner ID's
+  OWNER_IDS: ['961691050609623080'], // Bot owner ID's
   PREFIX: "!", // Default prefix for the bot
-  SUPPORT_SERVER: "", // Your bot support server
+  SUPPORT_SERVER: "https://discord.gg/fxhmHJXvzM", // Your bot support server
   PRESENCE: {
     ENABLED: true, // Whether or not the bot should update its status
-    STATUS: "online", // The bot's status [online, idle, dnd, invisible]
-    TYPE: "WATCHING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
-    MESSAGE: "{members} members in {servers} servers", // Your bot status message
+    STATUS: "dnd", // The bot's status [online, idle, dnd, invisible]
+    TYPE: "LISTENING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
+    MESSAGE: "a Fucking Hypocrite with {members} members in {servers} servers", // Your bot status message
   },
   DASHBOARD: {
     enabled: false, // enable or disable dashboard
@@ -15,10 +15,10 @@ module.exports = {
     port: "8080", // port to run the bot on
   },
   INTERACTIONS: {
-    SLASH: false, // Should the interactions be enabled
-    CONTEXT: false, // Should contexts be enabled
-    GLOBAL: false, // Should the interactions be registered globally
-    TEST_GUILD_ID: "xxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
+    SLASH: true, // Should the interactions be enabled
+    CONTEXT: true, // Should contexts be enabled
+    GLOBAL: true, // Should the interactions be registered globally
+    TEST_GUILD_ID: "601340081927749643", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   XP_SYSTEM: {
     COOLDOWN: 5, // Cooldown in seconds between messages
@@ -48,7 +48,7 @@ module.exports = {
   },
   MUSIC: {
     IDLE_TIME: 60, // Time in seconds before the bot disconnects from the voice channel
-    MAX_SEARCH_RESULTS: 5,
+    MAX_SEARCH_RESULTS: 3,
     NODES: [
       {
         host: "ger.lavalink.mitask.tech",
@@ -93,9 +93,9 @@ module.exports = {
   },
   /* Maximum number of keys that can be stored */
   CACHE_SIZE: {
-    GUILDS: 100,
-    USERS: 10000,
-    MEMBERS: 10000,
+    GUILDS: 1000,
+    USERS: 100000,
+    MEMBERS: 100000,
   },
   MESSAGES: {
     API_ERROR: "Unexpected Backend Error! Try again later or contact support server",
