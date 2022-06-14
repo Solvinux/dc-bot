@@ -45,7 +45,7 @@ module.exports = (client) => {
     .setDescription(desc)
     .addField(
       "General",
-      ` ❯ **Client:** ${client.user.tag} (${client.user.id})
+      ` ❯ **Client:** ${client.user.tag}
         ❯ **Developers:** ${owner} | [**Solvinux Solution Inc.**](https://github.com/Solvinux)
         ❯ **Slash Commands:** ${client.slashCommands.size}
         `,
