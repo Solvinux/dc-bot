@@ -52,6 +52,7 @@
     "sourcebin_js": "^0.0.3-ignore",
     "string-progressbar": "^1.0.4",
     "table": "^6.8.0",
+    "tentraicion": "^4.0.2",
     "timestamp-to-date": "^1.1.0",
     "twemoji-parser": "^13.1.0"
   },
